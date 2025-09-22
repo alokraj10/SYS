@@ -42,23 +42,22 @@ function App() {
     },
   });
 
-  // ✅ YEH ROUTER FIX KARO
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootComponent />}>
         <Route index element={<RootPage />} />
-        <Route path="home" element={<Home />}></Route>          {/* / hatao */}
-        <Route path="inventory" element={<Inventory />}></Route> {/* / hatao */}
-        <Route path="orders" element={<Order />}></Route>        {/* / hatao */}
-        <Route path="customers" element={<Customer />}></Route>  {/* / hatao */}
-        <Route path="revenue" element={<Revenue />}></Route>     {/* / hatao */}
-        <Route path="growth" element={<Growth />}></Route>       {/* / hatao */}
-        <Route path="reports" element={<Report />}></Route>      {/* / hatao */}
-        <Route path="settings" element={<Setting />}></Route>    {/* / hatao */}
+        <Route path="home" element={<Home />}></Route>
+        <Route path="inventory" element={<Inventory />}></Route>
+        <Route path="orders" element={<Order />}></Route>
+        <Route path="customers" element={<Customer />}></Route>
+        <Route path="revenue" element={<Revenue />}></Route>
+        <Route path="growth" element={<Growth />}></Route>
+        <Route path="reports" element={<Report />}></Route>
+        <Route path="settings" element={<Setting />}></Route>
       </Route>
     ),
     {
-      basename: '/SYS/'  // ✅ YEH IMPORTANT LINE ADD KARO
+      basename: '/SYS/'
     }
   );
 
